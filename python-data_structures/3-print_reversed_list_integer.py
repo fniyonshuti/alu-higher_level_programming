@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-def element_at(my_list, idx):
-    if idx < 0:
-        return None
-    elif idx >= len(my_list):
-        return None
-    else:
-        return my_list[idx]
+def print_reversed_list_integer(my_list=[]):
+    if my_list:
+        for element in my_list[::-1]:
+            print("{:d}".format(element))
