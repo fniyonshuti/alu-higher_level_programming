@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 
-def update_dictionary(a_dictionary, key, value):
+def simple_delete(a_dictionary, key=""):
     """
-    A function that replaces or adds
-    key/value in a dictionary.
+    A function that deletes a key in a dictionary.
     """
-    a_dictionary[key] = value
+    if key in a_dictionary:
+        del a_dictionary[key]
     return a_dictionary
