@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
 import string
-print(string.ascii_uppercase)
+print(*map(chr, range(65, 91)))
